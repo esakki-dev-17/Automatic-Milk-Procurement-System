@@ -156,7 +156,7 @@ void clean() {
   cleaning_servo.write(160);
   int cleaning_time = millis();
 
-  digitalWrite(PUMP, HIGH);
+  digitalWrite(PUMP, HIGH); //Turning ON Pump 
 
   while (millis() - cleaning_time <= 60000) {
     float distance = read_ultrasonic_sensor();
